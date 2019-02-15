@@ -1,5 +1,6 @@
 from flask import Flask
-import json
+import json,os
+from crypt import AESCipher
 
 
 app = Flask(__name__)
@@ -11,7 +12,11 @@ def home():
 
 @app.route("/message")
 def message():
-    return "My message"
+    key = os.environ['key']
+    cipher = AESCipher(key)
+    encrypted = os.environ['encrypted']
+    decrypted = cipher.decrypt(encrypted)
+    return decrypted
 
 @app.route("/status")
 def status():

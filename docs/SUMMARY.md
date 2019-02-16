@@ -11,4 +11,11 @@
 8. Created `.travis.yml` in root of git repository.
 9. Created `travis/deploy_dockerhub.sh` to push dockers to dockerhub.
 10. Enabled git repository in Travis and configured environments that we use in `deploy_dockerhub.sh`.
+
+![Screenshot](../screenshots/Travis1.png)
+
+![Screenshot](../screenshots/Travis2.png)
+
 11. Performed commit in git check CI/CD process.
+
+![Screenshot](../screenshots/DockerHub.png)

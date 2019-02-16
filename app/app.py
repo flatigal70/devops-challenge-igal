@@ -20,7 +20,7 @@ def message():
 
 @app.route("/status")
 def status():
-    status_response = {"status": "completed", "container": "flatigal/devops-challenge-igal:tagname", "project": "https://github.com/flatigal70/devops-challenge-igal.git"}
+    status_response = {"status": "completed", "container": "flatigal/devops-challenge-igal:latest", "project": "https://github.com/flatigal70/devops-challenge-igal.git"}
     return json.dumps(status_response)
 
 if __name__ == "__main__":

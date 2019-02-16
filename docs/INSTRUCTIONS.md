@@ -2,6 +2,7 @@
 
 1. Clone repository `https://github.com/flatigal70/devops-challenge-igal.git`.
 2. Download `env.zip` from the returning mail, unzip and launch it.
+   `unzip env.zip && source ./.env.sh`
    Script will create `key` and `encripted` environmens.
 3. Run `verification.sh` to test application.
 

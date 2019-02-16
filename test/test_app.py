@@ -35,6 +35,9 @@ class FlaskDevopsTests(unittest.TestCase):
         result = self.app.get('/status') 
         self.assertEqual(result.status_code, 200)
 
+#   Application based on local environments and this test run just locally.
+#   Removed for Travis process.
+#  
 #    def test_status_status_code(self):
 #        result = self.app.get('/message') 
 #        self.assertEqual(result.status_code, 200) 

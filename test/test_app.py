@@ -35,6 +35,6 @@ class FlaskDevopsTests(unittest.TestCase):
         result = self.app.get('/status') 
         self.assertEqual(result.status_code, 200)
 
-    def test_status_status_code(self):
-        result = self.app.get('/message') 
-        self.assertEqual(result.status_code, 200) 
+#    def test_status_status_code(self):
+#        result = self.app.get('/message') 
+#        self.assertEqual(result.status_code, 200) 
